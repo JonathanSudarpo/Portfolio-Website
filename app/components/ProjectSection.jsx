@@ -29,7 +29,7 @@ const projectsData = [
     description: "Crafted a sleek and responsive personal portfolio using React, showcasing a modern design with interactive elements. This project involved strategic use of JavaScript to enhance user experience and exhibit my professional and academic accomplishments.",
     image: "/images/portfolio.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/JonathanSudarpo/Portfolio-Website/tree/main/portfolio_website_git",
+    gitUrl: "https://github.com/JonathanSudarpo/Portfolio-Website",
     previewUrl: "/",
   },
   {
