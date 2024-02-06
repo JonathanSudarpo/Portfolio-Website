@@ -37,7 +37,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
 
-            This portfolio captures my evolving journey in tech. I'm actively seeking a co-op role where I can further apply and hone my skills. Let's connect and explore possibilities!
+            This portfolio captures my evolving journey in tech. I&apos;m actively seeking a co-op role where I can further apply and hone my skills. Let&apos;s connect and explore possibilities!
           </p>
           <div>
             <a href="https://www.linkedin.com/in/jonathansudarpo/" target="_blank" rel="noopener noreferrer">
