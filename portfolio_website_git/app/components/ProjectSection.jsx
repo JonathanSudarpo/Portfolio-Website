@@ -8,41 +8,14 @@ import {motion, useInView} from "framer-motion"
 const projectsData = [
   {
     id: 1,
-    title: "Agile Task Manager",
-    description: "A C++ text-based project management tool with user profiles, role-based access, and project card management. Features command-line interface output/input management using the iomanip library.",
-    image: "/images/AgilePic.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/JonathanSudarpo/Agile-Task-Manager",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
-    title: "Image Processor",
-    description: "Java-based image processing application featuring a Swing GUI. Includes seven advanced operations like filters and color transformations. Utilizes Java IO and AWT for pixel manipulation in BufferedImage objects.",
-    image: "/images/imageprocessor.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/JonathanSudarpo/Object-Oriented-Design/tree/main/Imageine%20Image%20Processor",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "Marble Solitaire",
-    description: "Implemented three variants of Marble Solitaire in Java with different board designs and rules. Applied MVC architecture for clean separation of concerns and a robust command-line interface for game interactions.",
-    image: "/images/Solitaire.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/JonathanSudarpo/Object-Oriented-Design/tree/main/Marble%20Solitaire",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
     title: "Natural Language Query for Telkomsel",
     description: "Developed and deployed an AI-driven chatbot in Python, utilizing a proprietay AI model and StreamLit for web integration, allowing Telkomsel's management to query the company database using natural language. This system streamlines data access beyond traditional SQL, enhancing decision-making efficiency.",
     image: "/images/streamlit.jpeg",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/JonathanSudarpo/NLQ_Telkomsel/tree/main/genai_ndmJ",
     previewUrl: "/",  },
   {
-    id: 5,
+    id: 2,
     title: "Data Visualization Map for Telkomsel",
     description: "Utilized Folium with Python to create an interactive map visualizing Telkomsel's data. This tool provides insightful geographic representations of datasets, enhancing data accessibility and strategic decision-making.",
     image: "/images/map.jpeg",
@@ -51,14 +24,42 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 6,
+    id: 3,
     title: "React Portfolio",
     description: "Crafted a sleek and responsive personal portfolio using React, showcasing a modern design with interactive elements. This project involved strategic use of JavaScript to enhance user experience and exhibit my professional and academic accomplishments.",
     image: "/images/portfolio.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/JonathanSudarpo/Portfolio-Website/tree/main/portfolio_website_git",
     previewUrl: "/",
   },
+  {
+    id: 4,
+    title: "Image Processor",
+    description: "Java-based image processing application featuring a Swing GUI. Includes seven advanced operations like filters and color transformations. Utilizes Java IO and AWT for pixel manipulation in BufferedImage objects.",
+    image: "/images/imageprocessor.png",
+    tag: ["All", "Software"],
+    gitUrl: "https://github.com/JonathanSudarpo/Object-Oriented-Design/tree/main/Imageine%20Image%20Processor",
+    previewUrl: "/",
+  },
+  {
+    id: 5,
+    title: "Agile Task Manager",
+    description: "A C++ text-based project management tool with user profiles, role-based access, and project card management. Features command-line interface output/input management using the iomanip library.",
+    image: "/images/AgilePic.png",
+    tag: ["All", "Software"],
+    gitUrl: "https://github.com/JonathanSudarpo/Agile-Task-Manager",
+    previewUrl: "/",
+  },
+  {
+    id: 6,
+    title: "Marble Solitaire",
+    description: "Implemented three variants of Marble Solitaire in Java with different board designs and rules. Applied MVC architecture for clean separation of concerns and a robust command-line interface for game interactions.",
+    image: "/images/Solitaire.png",
+    tag: ["All", "Software"],
+    gitUrl: "https://github.com/JonathanSudarpo/Object-Oriented-Design/tree/main/Marble%20Solitaire",
+    previewUrl: "/",
+  },
+
 ];
 
 const ProjectsSection = () => {
@@ -98,8 +99,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Software"
+          isSelected={tag === "Software"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
